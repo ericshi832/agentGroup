@@ -44,16 +44,16 @@ case $selection in
     a|A)
         # 全员: Max左 + 右三栏
         tmux new-session -d -s $SESSION -c "$DIR/max" -n "AI Group"
-        tmux send-keys -t $SESSION "claude -c 2>/dev/null || claude" C-m
+        tmux send-keys -t $SESSION "claude --model claude-sonnet-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-sonnet-4-6 --dangerously-skip-permissions" C-m
 
         tmux split-window -h -t $SESSION -c "$DIR/ella" -p 40
-        tmux send-keys -t $SESSION "claude --model claude-opus-4-5-20251101 -c 2>/dev/null || claude --model claude-opus-4-5-20251101" C-m
+        tmux send-keys -t $SESSION "claude --model claude-opus-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-opus-4-6 --dangerously-skip-permissions" C-m
 
         tmux split-window -v -t $SESSION -c "$DIR/jarvis"
-        tmux send-keys -t $SESSION "claude --model claude-opus-4-5-20251101 -c 2>/dev/null || claude --model claude-opus-4-5-20251101" C-m
+        tmux send-keys -t $SESSION "claude --model claude-opus-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-opus-4-6 --dangerously-skip-permissions" C-m
 
         tmux split-window -v -t $SESSION -c "$DIR/kyle"
-        tmux send-keys -t $SESSION "claude -c 2>/dev/null || claude" C-m
+        tmux send-keys -t $SESSION "claude --model claude-sonnet-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-sonnet-4-6 --dangerously-skip-permissions" C-m
 
         tmux select-pane -t $SESSION:0.0
         tmux attach-session -t $SESSION
@@ -61,13 +61,13 @@ case $selection in
     b|B)
         # 三人: Max左 + 右两栏
         tmux new-session -d -s $SESSION -c "$DIR/max" -n "AI Group"
-        tmux send-keys -t $SESSION "claude -c 2>/dev/null || claude" C-m
+        tmux send-keys -t $SESSION "claude --model claude-sonnet-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-sonnet-4-6 --dangerously-skip-permissions" C-m
 
         tmux split-window -h -t $SESSION -c "$DIR/ella" -p 40
-        tmux send-keys -t $SESSION "claude --model claude-opus-4-5-20251101 -c 2>/dev/null || claude --model claude-opus-4-5-20251101" C-m
+        tmux send-keys -t $SESSION "claude --model claude-opus-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-opus-4-6 --dangerously-skip-permissions" C-m
 
         tmux split-window -v -t $SESSION -c "$DIR/jarvis"
-        tmux send-keys -t $SESSION "claude --model claude-opus-4-5-20251101 -c 2>/dev/null || claude --model claude-opus-4-5-20251101" C-m
+        tmux send-keys -t $SESSION "claude --model claude-opus-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-opus-4-6 --dangerously-skip-permissions" C-m
 
         tmux select-pane -t $SESSION:0.0
         tmux attach-session -t $SESSION
@@ -75,16 +75,16 @@ case $selection in
     c|C)
         # 仅Max
         tmux new-session -d -s $SESSION -c "$DIR/max" -n "AI Group"
-        tmux send-keys -t $SESSION "claude -c 2>/dev/null || claude" C-m
+        tmux send-keys -t $SESSION "claude --model claude-sonnet-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-sonnet-4-6 --dangerously-skip-permissions" C-m
         tmux attach-session -t $SESSION
         ;;
     d|D)
         # 设计开发: 艾拉左 + 贾维斯右
         tmux new-session -d -s $SESSION -c "$DIR/ella" -n "设计+开发"
-        tmux send-keys -t $SESSION "claude --model claude-opus-4-5-20251101 -c 2>/dev/null || claude --model claude-opus-4-5-20251101" C-m
+        tmux send-keys -t $SESSION "claude --model claude-opus-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-opus-4-6 --dangerously-skip-permissions" C-m
 
         tmux split-window -h -t $SESSION -c "$DIR/jarvis"
-        tmux send-keys -t $SESSION "claude --model claude-opus-4-5-20251101 -c 2>/dev/null || claude --model claude-opus-4-5-20251101" C-m
+        tmux send-keys -t $SESSION "claude --model claude-opus-4-6 --dangerously-skip-permissions -c 2>/dev/null || claude --model claude-opus-4-6 --dangerously-skip-permissions" C-m
 
         tmux attach-session -t $SESSION
         ;;

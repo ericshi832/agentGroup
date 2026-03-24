@@ -6,11 +6,11 @@ cd "$(dirname "$0")/jarvis"
 
 # 模型选择
 if [ "$1" = "opus" ]; then
-  MODEL="claude-opus-4-5-20251101"
-  MODEL_NAME="Opus 4.5"
+  MODEL="claude-opus-4-6"
+  MODEL_NAME="Opus 4.6"
 else
-  MODEL="claude-sonnet-4-20250514"
-  MODEL_NAME="Sonnet 4"
+  MODEL="claude-sonnet-4-6"
+  MODEL_NAME="Sonnet 4.6"
 fi
 
 echo "=========================================="
@@ -20,4 +20,4 @@ echo "=========================================="
 echo ""
 
 # 默认继承上次会话，如果没有历史则新建
-claude --model $MODEL -c 2>/dev/null || claude --model $MODEL
+claude --model $MODEL --dangerously-skip-permissions -c 2>/dev/null || claude --model $MODEL --dangerously-skip-permissions

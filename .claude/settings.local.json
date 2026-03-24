@@ -1,3 +1,11 @@
 {
-  "model": "claude-sonnet-4-20250514"
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m json.tool /Users/eric/Documents/05-AiCode/agentGroup/shared/notifications.json)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)",
+      "Bash(git add:*)"
+    ]
+  },
+  "model": "claude-sonnet-4-6"
 }

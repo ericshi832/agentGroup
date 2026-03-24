@@ -286,7 +286,7 @@ IF (多类型测试 OR 测试+报告 OR 可并行验证) THEN {
 | 模型 | Token数量 | Token比例 | 花费金额 | 成本比例 | 主要用途 |
 |------|----------|----------|----------|----------|----------|
 | Haiku 4.5 | ~XXX | XX% | $X.XX | XX% | 简单操作 |
-| Sonnet 4.5 | ~XXX | XX% | $X.XX | XX% | 核心分析 |
+| Sonnet 4.6 | ~XXX | XX% | $X.XX | XX% | 核心分析 |
 | Opus 4.6 | ~XXX | XX% | $X.XX | XX% | 复杂设计 |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -295,7 +295,7 @@ IF (多类型测试 OR 测试+报告 OR 可并行验证) THEN {
 
 **价格参考 (MTok = 百万Token)**：
 - Haiku 4.5: Input $1/MTok, Output $5/MTok
-- Sonnet 4.5: Input $3/MTok, Output $15/MTok
+- Sonnet 4.6: Input $3/MTok, Output $15/MTok
 - Opus 4.6: Input $5/MTok, Output $25/MTok
 
 **状态判断标准**：

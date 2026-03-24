@@ -39,7 +39,7 @@ Read: App.vue (完整800行，~8000 tokens)
 
 | 角色 | 配置文件 | 模型 |
 |------|----------|------|
-| 贾维斯 | jarvis/.claude/settings.local.json | Opus 4.5 |
+| 贾维斯 | jarvis/.claude/settings.local.json | Opus 4.6 |
 | 凯尔 | kyle/.claude/settings.local.json | Sonnet 4 |
 
 下次启动时会自动使用对应模型，无需手动指定...
