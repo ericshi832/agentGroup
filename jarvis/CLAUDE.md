@@ -273,6 +273,18 @@ IF (前后端分离 OR 多模块开发 OR 可并行编码) THEN {
 | `/status` | 查看共享状态 |
 | `/icons` | 搜索和获取图标 (better-icons) |
 
+### 🎨 图标获取能力 (better-icons)
+
+开发中需要图标时，可通过 MCP 工具或 CLI 直接搜索和下载，无需手动查找：
+
+- **MCP工具** (推荐): `search_icons`、`get_icon`、`get_icons`、`recommend_icons` 等，启动后自动可用
+- **CLI方式**: `npx better-icons search <关键词>` / `npx better-icons get <icon-id>`
+- **图标ID格式**: `prefix:name`，如 `lucide:home`、`mdi:arrow-right`
+- **常用图标库**: lucide, mdi, heroicons, tabler, ph, ri, solar
+- **详细文档**: 参见 `./skills/better-icons/SKILL.md`
+
+**使用场景**: 前端开发中遇到需要图标的场景（按钮、导航、状态指示等），主动搜索合适图标并集成到项目中。
+
 ## 任务执行流程（强制）
 
 ### 执行任何任务前必须：
